@@ -65,7 +65,7 @@ class Config():
     dim_char = 100
 
     # glove files
-    filename_glove = "data/glove.6B/glove.6B.{}d.txt".format(dim_word)
+    filename_glove = "/Users/rpasumar/Google Drive/CMU/neural-relation-extraction/data/glove.6B/glove.6B.{}d.txt".format(dim_word)
     # trimmed embeddings (created from glove_filename with build_data.py)
     filename_trimmed = "data/glove.6B.{}d.trimmed.npz".format(dim_word)
     use_pretrained = True
@@ -75,7 +75,10 @@ class Config():
     # filename_test = "data/coNLL/eng/eng.testb.iob"
     # filename_train = "data/coNLL/eng/eng.train.iob"
 
-    filename_dev = filename_test = filename_train = "data/test.txt" # test
+    # filename_dev = filename_test = filename_train = "data/test.txt" # test
+    filename_dev = "data/ABSA.dev"
+    filename_test = "data/ABSA.test"
+    filename_train = "data/ABSA.train"
 
     max_iter = None # if not None, max number of examples in Dataset
 
